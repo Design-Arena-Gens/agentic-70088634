@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-white antialiased;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.card {
+  @apply bg-card rounded-xl border border-white/5 shadow-lg shadow-black/20;
+}
+
+.card-header {
+  @apply px-5 pt-4 pb-2 font-medium text-white/90;
+}
+
+.card-body {
+  @apply p-5;
+}
+
+.kpi {
+  @apply text-2xl font-semibold;
+}
+
+.kpi-label {
+  @apply text-sm text-subtle;
+}
